@@ -87,14 +87,17 @@ const QuoteBox = ({ getQuote, quote }) => {
         >{`- ${author}`}</Typography>
       </CardContent>
       <CardActions className={classes.buttonWrapper}>
-        <Button className={classes.button} size="large" variant="contained">
-          <a
+        <a>
+          <Button
+            className={classes.button}
+            size="large"
+            variant="contained"
             id="tweet-quote"
             href={`https://twitter.com/intent/tweet?text=${text},${author}`}
           >
             Tweet
-          </a>
-        </Button>
+          </Button>
+        </a>
         <Button
           className={classes.button}
           size="large"
